@@ -1,4 +1,5 @@
 ## Cruce Challenge
+
 ### RUN
 ```
 go to "back" folder
@@ -6,20 +7,19 @@ npm intall
 npm run seed
 npm start
 ```
+
 ### ROUTES
-*obtener todos los usuarios*
+_Obtener todos los usuarios_
 ```
 GET
 localhost:3000/api/users
-
 ```
-*Obtener todos los usuarios según método de pago*
+_Obtener todos los usuarios según método de pago_
 ```
 GET
 localhost:3000/api/users?metodoDeFacturacion=VTEX
-
 ```
-*Crear usuario*
+_Crear usuario_
 ```
 POST
 localhost:3000/api/users
@@ -33,12 +33,12 @@ localhost:3000/api/users
   "isActive": true
 }
 ```
-*Obtener usuarios activos/inactivos*
+_Obtener usuarios activos/inactivos_
 ```
 GET
 localhost:3000/api/users/activity
 ```
-*Actualizar información de uno o más usuarios*
+_Actualizar información de uno o más usuarios_
 ```
 PUT
 localhost:3000/api/users
@@ -47,13 +47,12 @@ localhost:3000/api/users
  {"email": "bar@bar.com", "accountName": "BarCruce", "metodoDeFacturacion": "VTEX"}
 ]
 ```
-
-*Obtener lista de órdenes VTEX*
+_Obtener lista de órdenes VTEX_
 ```
 GET
 localhost:3000/api/orders
 ```
-*Obtener lista de órdenes VTEX de varios usuarios*
+_Obtener lista de órdenes VTEX de varios usuarios_
 ```
 POST
 localhost:3000/api/orders
@@ -61,5 +60,3 @@ localhost:3000/api/orders
   "emails": ["matias@cruce.com", "franco@cruce.com", "flavio@cruce.com"]
 }
 ```
-
-
