@@ -4,24 +4,11 @@ const bcrypt = require("bcrypt");
 
 class User extends Model {}
 
-/* User.init(
-  {
-    email: {
-      type: DataTypes.STRING,
-    },
-    password: {
-      type: DataTypes.STRING,
-      allownull: false,
-    },
-  },
-  { sequelize: db, modelName: "user" }
-); */
-
 User.init(
   {
     email: {
       type: DataTypes.STRING,
-      allownull: false,
+      allowNull: false,
       unique: true,
       validate: {
         isEmail: true,
@@ -29,14 +16,14 @@ User.init(
     },
     password: {
       type: DataTypes.STRING,
-      allownull: false,
+      allowNull: false,
     },
     salt: {
       type: DataTypes.STRING,
     },
     accountName: {
       type: DataTypes.STRING,
-      allownull: false,
+      allowNull: false,
     },
     appKey: {
       type: DataTypes.STRING,
